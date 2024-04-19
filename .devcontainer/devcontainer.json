@@ -9,10 +9,13 @@
 		"ghcr.io/devcontainers/features/java:1": {
 			"version": "none",
 			"installMaven": "false",
-			"installGradle": "true"
+			"installGradle": "true",
+			"gradleVersion": "8.7"
 		},
 		"ghcr.io/devcontainers-contrib/features/kotlin-sdkman:2": {},
 		"ghcr.io/nordcominc/devcontainer-features/android-sdk:1": {
+			"platform": "29",
+			"build_tools": "29.0.0",
 			"base_packages": "emulator"
 		}
 	},
