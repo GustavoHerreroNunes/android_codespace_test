@@ -12,11 +12,22 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import br.com.fiap.aplicacaovazia.ui.theme.AplicacaoVaziaTheme
 import android.util.Log
+import android.widget.Toast
+import android.content.Intent
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Log.i("AppTest", "I'm working")
+
+        btnDiveIn.setOnClickListener{
+            Log.i("AppTest", "Button clicked. Diving in...")
+            Toast.makeText(this, "Diving in...", Toast.LENGTH_SHORT).show()
+            
+            //Create an Intent to navigate to the DiveInActivity
+            val intent = Intent(this, DiveInActivity::class.java)
+        }
     }
 }
