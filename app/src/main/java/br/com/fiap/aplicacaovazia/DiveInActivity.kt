@@ -3,6 +3,7 @@ import android.content.Intent
 import androidx.activity.ComponentActivity
 import android.util.Log
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_dive_in.*
 
 class DiveInActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
