@@ -24,7 +24,9 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"mathiasfrohlich.Kotlin"
+				"mathiasfrohlich.Kotlin",
+				"fwcd.kotlin",
+				"GitHub.copilot"
 			]
 		}
 	}
