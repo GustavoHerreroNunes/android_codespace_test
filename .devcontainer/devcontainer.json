@@ -5,6 +5,7 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/java:1-21-bullseye",
 
+	"runArgs": ["--device=/dev/net/tun"],
 	"features": {
 		"ghcr.io/devcontainers/features/java:1": {
 			"version": "none",
@@ -16,8 +17,9 @@
 		"ghcr.io/nordcominc/devcontainer-features/android-sdk:1": {
 			"platform": "29",
 			"build_tools": "29.0.0",
-			"base_packages": "emulator"
-		}
+			"base_packages": "platform-tools"
+		},
+		"ghcr.io/tailscale/codespace/tailscale": {}
 	},
 	"customizations": {
 		"vscode": {
