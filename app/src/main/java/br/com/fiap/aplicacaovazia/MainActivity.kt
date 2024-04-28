@@ -28,6 +28,7 @@ class MainActivity : ComponentActivity() {
             
             //Create an Intent to navigate to the DiveInActivity
             val intent = Intent(this, DiveInActivity::class.java)
+            startActivity(intent)
         }
     }
 }

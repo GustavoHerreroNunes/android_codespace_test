@@ -14,6 +14,7 @@ class RegisterActivity : ComponentActivity() {
             Log.d("LoginActivity", "Comming back to Login")
             Toast.makeText(this, "Coming back to login", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, DiveInActivity::class.java)
+            startActivity(intent)
         }
     }
 }

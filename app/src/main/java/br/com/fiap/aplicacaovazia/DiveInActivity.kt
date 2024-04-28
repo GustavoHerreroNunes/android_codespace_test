@@ -17,8 +17,9 @@ class DiveInActivity : ComponentActivity() {
             Log.d("DiveInActivity", "Moving to RegisterActivity")
             val formData = getFormData()
 
-            Toast.makeText(this, "UserData: ${formData.joinToString()}", Toast.LENGHT_LONG).show(
+            Toast.makeText(this, "UserData: ${formData.joinToString()}", Toast.LENGTH_LONG).show()
             val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
         }
 
         btnLogin.setOnClickListener {
@@ -27,16 +28,16 @@ class DiveInActivity : ComponentActivity() {
             Log.d("DiveInActivity", "Moving to LoginActivity")
             val formData = getFormData()
 
-            Toast.makeText(this, "UserData: ${formData.joinToString()}", Toast.LENGHT_LONG).show(
+            Toast.makeText(this, "UserData: ${formData.joinToString()}", Toast.LENGTH_LONG).show()
             val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
         }
     }
 
-    fun getFormData(): Arrayof<String> {
-        val name = etName.text.toString()
-        val email = etEmail.text.toString()
-        val password = etPassword.text.toString()
+    fun getFormData(): Array<String> {
+        val name = edtName.text.toString()
+        val email = edtEmail.text.toString()
+        val password = edtPassword.text.toString()
         return arrayOf(name, email, password)
     }
 }
-// Your code here
