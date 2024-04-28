@@ -30,5 +30,4 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 [plugins]
 androidApplication = { id = "com.android.application", version = "8.3.0" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-kotlinAndroidExtension = { id = "kotlin-android-extensions" }
 

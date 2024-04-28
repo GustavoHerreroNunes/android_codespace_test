@@ -3,15 +3,19 @@ import android.content.Intent
 import androidx.activity.ComponentActivity
 import android.util.Log
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_dive_in.*
 
 class DiveInActivity : ComponentActivity() {
+
+    private lateint var binding : ActivityDiveInBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // Set the layout for this activity
-        setContentView(R.layout.activity_dive_in)
+        
+        ActivityDiveInBinding.inflate(layoutInflater)
 
-        btnRegister.setOnClickListener {
+        setContentView(binding.root)
+
+        binding.btnRegister.setOnClickListener {
             Log.d("DiveInActivity", "btnRegister clicked")
 
             Log.d("DiveInActivity", "Moving to RegisterActivity")
@@ -22,7 +26,7 @@ class DiveInActivity : ComponentActivity() {
             startActivity(intent)
         }
 
-        btnLogin.setOnClickListener {
+        binding.btnLogin.setOnClickListener {
             Log.d("DiveInActivity", "btnLogin clicked")
 
             Log.d("DiveInActivity", "Moving to LoginActivity")
@@ -34,10 +38,10 @@ class DiveInActivity : ComponentActivity() {
         }
     }
 
-    fun getFormData(): Array<String> {
-        val name = edtName.text.toString()
-        val email = edtEmail.text.toString()
-        val password = edtPassword.text.toString()
+    fun getFormData(): Arrayof<String> {
+        val name = binding.edtName.text.toString()
+        val email = binding.edtEmail.text.toString()
+        val password = binding.edtPassword.text.toString()
         return arrayOf(name, email, password)
     }
 }

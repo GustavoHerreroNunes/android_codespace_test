@@ -14,15 +14,21 @@ import br.com.fiap.aplicacaovazia.ui.theme.AplicacaoVaziaTheme
 import android.util.Log
 import android.widget.Toast
 import android.content.Intent
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : ComponentActivity() {
+
+    private lateint var binding : ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
+        ActivityMainBinding.inflate(layoutInflater)
+
+        setContentView(binding.root)
+        
         Log.i("AppTest", "I'm working")
 
-        btnDiveIn.setOnClickListener{
+        binding.btnDiveIn.setOnClickListener{
             Log.i("AppTest", "Button clicked. Diving in...")
             Toast.makeText(this, "Diving in...", Toast.LENGTH_SHORT).show()
             
