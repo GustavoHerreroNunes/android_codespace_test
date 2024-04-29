@@ -6,7 +6,7 @@ import androidx.activity.ComponentActivity
 
 class LoginActivity : ComponentActivity() {
 
-    private lateint var binding : ActivityLoginBinding
+    private lateinit var binding : ActivityLoginBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

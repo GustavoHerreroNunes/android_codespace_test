@@ -17,7 +17,7 @@ import android.content.Intent
 
 class MainActivity : ComponentActivity() {
 
-    private lateint var binding : ActivityMainBinding
+    private lateinit var binding : ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

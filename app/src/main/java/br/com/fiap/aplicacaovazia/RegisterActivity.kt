@@ -6,7 +6,7 @@ import androidx.activity.ComponentActivity
 
 class RegisterActivity : ComponentActivity() {
 
-    private lateing var binding : RegisterActivityBinding
+    private lateinit var binding : RegisterActivityBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -6,7 +6,7 @@ import android.widget.Toast
 
 class DiveInActivity : ComponentActivity() {
 
-    private lateint var binding : ActivityDiveInBinding
+    private lateinit var binding : ActivityDiveInBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,7 +38,7 @@ class DiveInActivity : ComponentActivity() {
         }
     }
 
-    fun getFormData(): Arrayof<String> {
+    fun getFormData(): Array<String> {
         val name = binding.edtName.text.toString()
         val email = binding.edtEmail.text.toString()
         val password = binding.edtPassword.text.toString()
