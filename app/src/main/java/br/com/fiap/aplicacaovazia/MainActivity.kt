@@ -14,6 +14,7 @@ import br.com.fiap.aplicacaovazia.ui.theme.AplicacaoVaziaTheme
 import android.util.Log
 import android.widget.Toast
 import android.content.Intent
+import br.com.fiap.aplicacaovazia.databinding.ActivityMainBinding
 
 class MainActivity : ComponentActivity() {
 

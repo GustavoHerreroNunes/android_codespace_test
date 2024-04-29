@@ -3,6 +3,7 @@ import android.content.Intent
 import androidx.activity.ComponentActivity
 import android.util.Log
 import android.widget.Toast
+import br.com.fiap.aplicacaovazia.databinding.ActivityDiveInBinding
 
 class DiveInActivity : ComponentActivity() {
 

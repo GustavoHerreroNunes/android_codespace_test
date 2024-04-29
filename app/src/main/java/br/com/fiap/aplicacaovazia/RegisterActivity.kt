@@ -3,6 +3,7 @@ import android.content.Intent
 import android.util.Log
 import android.widget.Toast
 import androidx.activity.ComponentActivity
+import br.com.fiap.aplicacaovazia.databinding.RegisterActivityBinding
 
 class RegisterActivity : ComponentActivity() {
 
