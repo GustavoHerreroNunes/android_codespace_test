@@ -4,6 +4,8 @@ import androidx.activity.ComponentActivity
 import android.util.Log
 import android.widget.Toast
 import br.com.fiap.aplicacaovazia.databinding.ActivityDiveInBinding
+import br.com.fiap.aplicacaovazia.RegisterActivity
+import br.com.fiap.aplicacaovazia.LoginActivity
 
 class DiveInActivity : ComponentActivity() {
 

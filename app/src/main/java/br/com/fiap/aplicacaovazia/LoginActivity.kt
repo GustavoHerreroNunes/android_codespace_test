@@ -4,6 +4,7 @@ import android.util.Log
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import br.com.fiap.aplicacaovazia.databinding.ActivityLoginBinding
+import br.com.fiap.aplicacaovazia.MainActivity
 
 class LoginActivity : ComponentActivity() {
 

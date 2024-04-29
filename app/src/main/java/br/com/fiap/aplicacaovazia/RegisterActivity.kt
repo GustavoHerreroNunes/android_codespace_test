@@ -4,6 +4,7 @@ import android.util.Log
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import br.com.fiap.aplicacaovazia.databinding.RegisterActivityBinding
+import br.com.fiap.aplicacaovazia.DiveInActivity
 
 class RegisterActivity : ComponentActivity() {
 

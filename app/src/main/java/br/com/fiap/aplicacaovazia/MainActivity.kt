@@ -15,6 +15,7 @@ import android.util.Log
 import android.widget.Toast
 import android.content.Intent
 import br.com.fiap.aplicacaovazia.databinding.ActivityMainBinding
+import br.com.fiap.aplicacaovazia.DiveInActivity
 
 class MainActivity : ComponentActivity() {
 
