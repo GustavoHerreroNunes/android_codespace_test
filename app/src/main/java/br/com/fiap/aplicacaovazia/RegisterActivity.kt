@@ -1,19 +1,22 @@
+package br.com.fiap.aplicacaovazia
+
 import android.os.Bundle
 import android.content.Intent
 import android.util.Log
 import android.widget.Toast
 import androidx.activity.ComponentActivity
-import br.com.fiap.aplicacaovazia.databinding.RegisterActivityBinding
+import br.com.fiap.aplicacaovazia.databinding.ActivityRegisterBinding
 import br.com.fiap.aplicacaovazia.DiveInActivity
+import br.com.fiap.aplicacaovazia.MainActivity
 
 class RegisterActivity : ComponentActivity() {
 
-    private lateinit var binding : RegisterActivityBinding
+    private lateinit var binding : ActivityRegisterBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        RegisterActivityBinding.inflate(layoutInflater)
+        ActivityRegisterBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
 
