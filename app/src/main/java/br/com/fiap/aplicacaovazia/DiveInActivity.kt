@@ -16,7 +16,7 @@ class DiveInActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         
-        ActivityDiveInBinding.inflate(layoutInflater)
+        binding = ActivityDiveInBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
 
