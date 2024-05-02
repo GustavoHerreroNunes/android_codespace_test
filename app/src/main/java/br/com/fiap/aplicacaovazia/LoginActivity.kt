@@ -21,7 +21,7 @@ class LoginActivity : ComponentActivity() {
 
         binding.btnLogout.setOnClickListener{
             Log.d("LoginActivity", "Starting Logout")
-            Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Starting Logout", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
