@@ -25,7 +25,6 @@
 		"vscode": {
 			"extensions": [
 				"mathiasfrohlich.Kotlin",
-				"fwcd.kotlin",
 				"GitHub.copilot"
 			]
 		}
