@@ -25,7 +25,8 @@
 		"vscode": {
 			"extensions": [
 				"mathiasfrohlich.Kotlin",
-				"GitHub.copilot"
+				"GitHub.copilot",
+				"AntonyDalmiere.android-support"
 			]
 		}
 	}
