@@ -8,18 +8,13 @@
 	"runArgs": ["--device=/dev/net/tun"],
 	"features": {
 		"ghcr.io/devcontainers/features/java:1": {
-			"version": "none",
-			"installMaven": "false",
-			"installGradle": "true",
-			"gradleVersion": "8.7"
+			"version": "17.0.12"
 		},
 		"ghcr.io/devcontainers-contrib/features/kotlin-sdkman:2": {},
-		"ghcr.io/nordcominc/devcontainer-features/android-sdk:1": {
-			"platform": "29",
-			"build_tools": "29.0.0",
-			"base_packages": "platform-tools"
-		},
-		"ghcr.io/tailscale/codespace/tailscale": {}
+		"ghcr.io/nordcominc/devcontainer-features/android-sdk:1": {},
+		"ghcr.io/tailscale/codespace/tailscale": {},
+		"ghcr.io/devcontainers/features/node:1": {},
+		"ghcr.io/devcontainers/features/python:1": {}
 	},
 	"customizations": {
 		"vscode": {
